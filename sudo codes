@@ -1,6 +1,0 @@
-sudo chmod 755 /opt/lampp/htdocs - 
-sudo chmod 777 /opt/lampp/htdocs
-
-for runnning xampp
-
-sudo /opt/lampp/lampp start
