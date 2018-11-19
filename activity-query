@@ -1,7 +1,0 @@
-SELECT MIN(units.name) unit,
-       SUM(amount) total
-        FROM activity_items a
-        JOIN units ON a.unit_id = units.id
-        GROUP BY unit_id
-        ORDER BY total DESC
-        LIMIT 10
