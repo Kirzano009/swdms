@@ -1,0 +1,33 @@
+kim@surface-3:~$ cd Desktop
+kim@surface-3:~/Desktop$ mkdir reports
+kim@surface-3:~/Desktop$ cd reports
+kim@surface-3:~/Desktop/reports$ git init
+Initialized empty Git repository in /home/kim/Desktop/reports/.git/
+kim@surface-3:~/Desktop/reports$ cp /home/kim/JaspersoftWorkspace/MyReports/first-report.jrxml .
+kim@surface-3:~/Desktop/reports$ ls
+first-report.jrxml
+kim@surface-3:~/Desktop/reports$ git add -A
+kim@surface-3:~/Desktop/reports$ git commit -m "Reports-1"
+[master (root-commit) d2bbe4a] Reports-1
+ 1 file changed, 166 insertions(+)
+ create mode 100644 first-report.jrxml
+kim@surface-3:~/Desktop/reports$ git remote add origin git@github.com:Kirzano009/Reports.git
+kim@surface-3:~/Desktop/reports$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+kim@surface-3:~/Desktop/reports$ git push -u origin master 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.40 KiB | 1.20 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Kirzano009/Reports/pull/new/master
+remote: 
+To github.com:Kirzano009/Reports.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
